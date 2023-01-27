@@ -30,3 +30,17 @@ string[] arr3 = {"Russia", "Denmark", "Kazan"}; // Заданные массив
             Console.WriteLine();
         }
     }
+void PrintArr(string[] array)
+{
+    Console.WriteLine($"Заданный массив:");
+    PrintNewArray(array);//Выводим на экран заданный массив
+    Console.WriteLine($"Результат:");
+    string[] newArray = ShortsArray(array);
+    PrintNewArray(newArray);//Выводим на экран новый массив и елемтов удовлетворяющим условию
+    Console.WriteLine();
+}
+
+PrintArr(arr1);
+PrintArr(arr2);
+PrintArr(arr3);
+
