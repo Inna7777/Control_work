@@ -18,4 +18,15 @@ string[] arr3 = {"Russia", "Denmark", "Kazan"}; // Заданные массив
         }
         return result;
     }
-    
+    void PrintNewArray(string[] newArray) //Функция вывода полученного нового массива
+    {
+        if ( newArray.Length == 0)
+        {
+            Console.WriteLine("Нет нужного елемента массива");
+        }
+        else
+        {
+            Array.ForEach(newArray, (str) => Console.Write($"{str}"));// Отображение элементов с помощью ForEach. 
+            Console.WriteLine();
+        }
+    }
